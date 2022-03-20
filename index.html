@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Meta names -->
+    <meta name="description" content="Sean bienvenidos al mundo de la cocteleria, aprenderas desde preparaciones rapidas a las tecnicas mas utilizadas y mejores bares del mundo!">
+    <meta name="keywords" content="Bar, Cocteleria, Tragos, Barman, Tecnicas, Daikiqui, Martini, Negroni, Coctel">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- familia prata -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prata&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <title>Inicio</title>
+  </head>
+  <body>
+    <header>
+    
+    <div class="container-fluid mb__cf">
+     <!-- Titulo Y introduccion -->
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="Titulo"><b>Black Taver</b></h1>   
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-lg-12">
+          <p class="p__index">Hola a todos! Bienvenido a la tienda online de los cocteles más populares, Agrega todos los tragos que quieras comprar!<br></p>
+          <div class="p__ftc">
+          <h2><b>Feel the Cocktail</b></h2>
+          </div>
+        </div>
+      </div>
+
+      <!--Fin de Titulo Y introduccion -->
+      <hr>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Carrito <span id= "cantidad" class="badge bg-secondary">0</span>
+      </button>
+      <hr>
+      <!-- BUSCADOR -->
+      <div class="container mt-5">
+        <h2>Buscador</h2>
+        <input type="text" id="formulario" class="form-control my-2">
+        <button class="btn btn-info mb-2" id="boton">Buscar Trago</button>
+        <button class="btn btn-info mb-2" id="botonL">Limpiar</button>
+      </div>
+      <hr>
+      <ul id="resultado">
+        
+      </ul>
+      <hr>
+      <!-- FIN DE BUSCADOR -->
+     
+      
+
+      
+      <!--INICIO PRODUCTOS-->
+      <div id="productosContenedor" class="row row-cols-3"> </div>
+      <!--FIN PRODUCTOS-->
+
+     <!-- INICIO MODAL -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content color">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Carrito</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <!-- carrito generado de js -->
+            <div id="productosCarrito" class="modal-body"></div>
+            <!-- fin carrito generado de js  -->
+            <div class="modal-footer">
+              <p id="totalCarrito"> </p>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button id="confirmar" type="button" class="btn btn-primary">Confirmar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- FIN MODAL -->
+    
+
+
+
+
+     
+      
+
+      
+       
+
+
+    
+    <!-- FOOTER -->
+    <footer>
+      
+      <div class="container-fluid mb__cf">
+        <div class="row">
+          <div class="col-lg-12 mb_footer">
+            
+            <ul class="nav justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link active" href="https://facebook.com"><img class="img__mobile" src="assets/Imagenes/facebook.png" alt="facebook"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://instagram.com"><img class="img__mobile" src="assets/Imagenes/instagram.png" alt="instagram"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://Twitter.com"><img class="img__mobile" src="assets/Imagenes/twitter.png" alt="twitter"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Pages/Contacto.html"><img class="img__mobile" src="assets/Imagenes/contacto.png" alt="contacto"></a>
+              </li>
+              <li class="nav-item">
+                <div class="footer__logo">
+
+                  <a href="index.html"><img class="img__mobile" src="assets/Imagenes/Logo transparente.png " height="60px" width="50px" alt="contacto"></a>
+                  
+                </div>
+              </li>
+            </ul>  
+                 
+          
+          </div>
+      </div>
+    </div>
+    </footer>
+
+    <!-- FIN DE FOOTER -->
+
+
+    <!-- SCRIPT DE JAVA -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <!--FIN DE SCRIPT DE JAVA -->
+
+  <!-- BORRAR MARCA DE AGUA -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script>
+       $(document).ready(function(){
+       $("a[title|='Hosted on free web hosting 000webhost.com. Host your own website for       FREE.']").css("display", "none");
+       $("img[alt|='www.000webhost.com']").css("display", "none");
+       });
+     </script>
+  <!-- FIN BORRAR MARCA DE AGUA -->
+
+  <!-- JavaScript linkeo -->
+  
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+  
+        
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/luxon@2.3.0/build/global/luxon.min.js"></script>
+  <script src="js/globales.js"></script>
+  <script src="js/funciones.js"></script>
+  <script src="js/productos.js"></script>
+  <script src="js/main.js"></script>
+  <!--Fin de JavaScript linkeo -->
+  </body>
+</html>

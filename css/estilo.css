@@ -1,0 +1,308 @@
+* {
+    color: white;
+    font-family: 'Prata', serif;
+    padding: 0px;
+    margin: 0px; }
+  
+  ul {
+    list-style-type: none; }
+  
+  a {
+    text-decoration: none;
+    color: white; }
+  
+  a:-webkit-any-link {
+    text-decoration: none;
+    color: white; }
+  
+  /*Tipografias*/
+  @font-face {
+    font-family: "humble";
+    src: url("../assets/fonts/a.ttf");
+    font-family: "humble2";
+    src: url("../assets/fonts/Break.ttf"); }
+  
+  body {
+    background-image: url("../assets/Imagenes/a2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+  
+  .row {
+    margin: 0px; }
+  
+  .carousel_mb {
+    display: none; }
+  
+  .barra {
+    display: none; }
+  
+  .flex, footer, .footer__logo {
+    display: flex;
+    flex-wrap: wrap; }
+  
+  footer {
+    background-color: black;
+    background-size: auto;
+    background-image: linear-gradient(black, black);
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    border: solid white 1px; }
+  
+  .footer__logo {
+    flex-direction: row; }
+  
+  h1 {
+    display: flex;
+    justify-content: center;
+    font-family: "humble";
+    font-size: 150px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 100px; }
+  
+  .navegador {
+    font-size: 25px; }
+  
+  .p__index {
+    display: flex;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 25px;
+    justify-content: center;
+    margin-top: 25px;
+    padding-top: 40px;
+    margin-left: 140px;
+    margin-right: 140px; }
+  
+  .p__ftc {
+    display: flex;
+    justify-content: center; }
+  
+  .navegador-2 {
+    margin-top: 20px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+  
+  .card-body {
+    background: black; }
+  
+  .card-group {
+    width: 1400px;
+    height: 466px; }
+  
+  .carta {
+    height: 200px;
+    width: 250px; }
+  
+  .carta_centrada {
+    display: flex;
+    justify-content: center; }
+  
+  .navegador-2 figure a {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 25px;
+    color: white; }
+  
+  .MenuInteractivo_1 figure a {
+    margin-right: 20px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 22px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+  
+  @keyframes Titulo {
+    0% {
+      width: 50%;
+      opacity: 0%; }
+    25% {
+      width: 60%;
+      opacity: 20%; }
+    50% {
+      width: 70%;
+      opacity: 40%; }
+    75% {
+      width: 80%;
+      opacity: 60%; }
+    100% {
+      width: 100%;
+      opacity: 100%; } }
+  
+  .Titulo {
+    animation-name: Titulo;
+    animation-duration: 1.2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-delay: 0s; }
+  
+  .centralizado {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px; }
+  
+  .titulo {
+    text-align: center; }
+  
+  .mb_temp {
+    margin-bottom: 20px; }
+  
+  .tecnicas {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: solid white 1px; }
+  
+  .centrado {
+    text-align: center;
+    font-size: 18px; }
+  
+  .bar {
+    background-color: black;
+    border: solid white 1px;
+    margin-bottom: 25px;
+    margin-right: 10px;
+    margin-left: 10px; }
+  
+  .bares__mb {
+    display: none; }
+  
+  @media only screen and (min-width: 0px) and (max-width: 768px) {
+    .mb_footer {
+      padding-right: 15px; }
+    .navegador {
+      font-size: 15px; }
+    h1 {
+      font-size: 55px;
+      margin-top: 30px; }
+    .p__index {
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 0px;
+      padding-top: 10px; }
+    h2 {
+      font-size: 28px; }
+    .mb__temp {
+      display: none; }
+    .img__mobile {
+      height: 42px;
+      width: 42px; }
+    .footer__logo {
+      padding-top: 5px; }
+    .carousel_dt {
+      display: none; }
+    .carousel_mb {
+      display: block;
+      margin-right: 10px;
+      margin-left: 10px; }
+    .mb__p {
+      padding-top: 20px; }
+    .mb__cf {
+      padding: 0px; }
+    @keyframes Titulo {
+      0% {
+        opacity: 0%; }
+      25% {
+        opacity: 20%; }
+      50% {
+        opacity: 40%; }
+      75% {
+        opacity: 60%; }
+      100% {
+        opacity: 100%; } }
+    .Titulo {
+      animation-name: Titulo;
+      animation-duration: 2s;
+      animation-iteration-count: 1;
+      animation-timing-function: linear;
+      animation-delay: 0s; } }
+  
+  @media only screen and (min-width: 0px) and (max-width: 768px) {
+    .centralizado {
+      flex-direction: column;
+      margin-left: 62px; }
+    .Titulo {
+      text-align: center; }
+    .mb__temp {
+      display: none; }
+    .fondo {
+      background-color: black;
+      border: solid white 1px; }
+    .barra {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px; } }
+  
+  @media only screen and (min-width: 0px) and (max-width: 768px) {
+    .bares__mb {
+      display: block; }
+    iframe {
+      display: none; } }
+  
+  .Formulario {
+    margin: 100px;
+    text-align: center; }
+  
+  .h1__contacto {
+    position: relative;
+    top: -60px;
+    font-family: "humble";
+    font-size: 40px;
+    text-align: center; }
+  
+  .form {
+    color: black; }
+  
+  input {
+    margin-bottom: 20px;
+    background-color: black; }
+  
+  .arreglo {
+    margin-bottom: 0px; }
+  
+  .grid_contacto {
+    display: grid;
+    grid-template-rows: 397px 763px -30px; }
+
+    .FondoCarrito{
+        background-color: black;
+        border: solid white 1px;
+    }
+
+    .FormatoCarrito{
+        margin: 20px;
+    }
+
+
+    .botonAQ{
+        display: flex;
+        text-align: center;
+        justify-content:center;
+        margin-bottom: 25px;
+    }
+    .botonAQFormato{
+        margin-right: 10px;
+    }
+
+    .FinCompra{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .prov{
+      color: black;
+    }
+
+    .color{
+      background-color: black;
+    }
+
+    .color2{
+      color: black;
+    }
